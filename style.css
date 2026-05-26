@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    margin-left: 25px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover{
+    color: yellow;
+}
+
+/* Hero Section */
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero-content button{
+    padding: 12px 25px;
+    border: none;
+    background: #00bcd4;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-content button:hover{
+    background: #0097a7;
+}
+
+/* Sections */
+.section{
+    min-height: 100vh;
+    padding: 120px 50px;
+    text-align: center;
+}
+
+.section h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+/* Dark Sections */
+.dark{
+    background: #222;
+    color: white;
+}
+
+/* Project Box */
+.project-box{
+    max-width: 700px;
+    margin: auto;
+    font-size: 20px;
+}
+
+/* Contact */
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+}
+
+.contact-box input,
+.contact-box textarea{
+    margin: 10px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-box button{
+    padding: 15px;
+    background: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact-box button:hover{
+    background: #0097a7;
+}
